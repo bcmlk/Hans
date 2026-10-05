@@ -152,18 +152,18 @@
     <div class="glow-blob w-[450px] h-[450px] bg-orange-600 bottom-[10%] left-[20%]"></div>
 
     <!-- Fixed Navigation Bar -->
-    <header class="fixed top-0 left-0 right-0 z-50 px-4 py-4 md:px-8">
-        <nav class="max-w-7xl mx-auto glass-panel rounded-full px-6 py-3 flex items-center justify-between shadow-2xl transition-all duration-300">
+    <header class="fixed top-0 left-0 right-0 z-50 px-3 py-2 md:px-8 md:py-4">
+        <nav class="max-w-7xl mx-auto glass-panel rounded-full px-4 py-2 md:px-6 md:py-3 flex items-center justify-between shadow-2xl transition-all duration-300">
             <!-- Brand Logo -->
-            <a href="#home" onclick="switchView('home')" class="flex items-center gap-3 group">
-                <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-cyan-400 to-indigo-600 p-[2px] transition-transform duration-300 group-hover:scale-105">
-                    <div class="w-full h-full bg-[#0a0a0c] rounded-full flex items-center justify-center font-bold tracking-tighter text-white">
+            <a href="#home" onclick="switchView('home')" class="flex items-center gap-2 md:gap-3 group">
+                <div class="w-8 h-8 md:w-10 md:h-10 rounded-full bg-gradient-to-tr from-cyan-400 to-indigo-600 p-[2px] transition-transform duration-300 group-hover:scale-105">
+                    <div class="w-full h-full bg-[#0a0a0c] rounded-full flex items-center justify-center font-bold tracking-tighter text-white text-xs md:text-base">
                         HL
                     </div>
                 </div>
                 <div class="flex flex-col">
-                    <span class="font-extrabold tracking-widest text-sm text-white group-hover:text-cyan-400 transition-colors">HANS LAZARO</span>
-                    <span class="text-[10px] tracking-widest text-slate-400 uppercase">WILSON</span>
+                    <span class="font-extrabold tracking-widest text-xs md:text-sm text-white group-hover:text-cyan-400 transition-colors">HANS LAZARO</span>
+                    <span class="text-[9px] md:text-[10px] tracking-widest text-slate-400 uppercase hidden sm:block">WILSON</span>
                 </div>
             </a>
 
@@ -179,30 +179,30 @@
             </div>
 
             <!-- CTA & Social Quick Links -->
-            <div class="flex items-center gap-3">
-                <button onclick="toggleMobileMenu()" class="md:hidden text-slate-300 hover:text-white text-xl p-2 focus:outline-none">
+            <div class="flex items-center gap-2">
+                <button onclick="toggleMobileMenu()" class="md:hidden text-slate-300 hover:text-white text-lg p-1.5 focus:outline-none" aria-label="Toggle Navigation Menu">
                     <i id="menu-icon" class="fa-solid fa-bars"></i>
                 </button>
             </div>
         </nav>
 
         <!-- Mobile Dropdown Menu -->
-        <div id="mobile-menu" class="hidden md:hidden max-w-7xl mx-auto mt-2 glass-panel rounded-2xl p-6 flex flex-col gap-4 text-center border border-white/10 shadow-2xl">
-            <button onclick="switchView('home'); toggleMobileMenu()" class="text-slate-200 py-2 border-b border-white/5 font-medium">Home</button>
-            <button onclick="switchView('about'); toggleMobileMenu()" class="text-slate-200 py-2 border-b border-white/5 font-medium">About</button>
-            <button onclick="switchView('work'); toggleMobileMenu()" class="text-slate-200 py-2 border-b border-white/5 font-medium">Visual Vault (Portfolio)</button>
-            <button onclick="switchView('strava'); toggleMobileMenu()" class="text-slate-200 py-2 border-b border-white/5 font-medium text-orange-400 flex items-center justify-center gap-2">
+        <div id="mobile-menu" class="hidden md:hidden max-w-7xl mx-auto mt-2 glass-panel rounded-2xl p-4 flex flex-col gap-3 text-center border border-white/10 shadow-2xl">
+            <button onclick="switchView('home'); toggleMobileMenu()" class="text-slate-200 py-2 border-b border-white/5 font-medium text-sm">Home</button>
+            <button onclick="switchView('about'); toggleMobileMenu()" class="text-slate-200 py-2 border-b border-white/5 font-medium text-sm">About</button>
+            <button onclick="switchView('work'); toggleMobileMenu()" class="text-slate-200 py-2 border-b border-white/5 font-medium text-sm">Visual Vault (Portfolio)</button>
+            <button onclick="switchView('strava'); toggleMobileMenu()" class="text-slate-200 py-2 border-b border-white/5 font-medium text-sm text-orange-400 flex items-center justify-center gap-2">
                 <i class="fa-brands fa-strava"></i> Strava Athletics
             </button>
-            <button onclick="switchView('contact'); toggleMobileMenu()" class="text-slate-200 py-2 font-medium">Contact</button>
-            <a href="https://wa.me/97336266762" target="_blank" class="bg-gradient-to-r from-cyan-500 to-blue-600 text-black font-bold py-3 rounded-xl mt-2 text-sm uppercase tracking-wider flex items-center justify-center gap-2">
-                <i class="fa-brands fa-whatsapp text-lg"></i> Direct WhatsApp
+            <button onclick="switchView('contact'); toggleMobileMenu()" class="text-slate-200 py-2 font-medium text-sm">Contact</button>
+            <a href="https://wa.me/97336266762" target="_blank" class="bg-gradient-to-r from-cyan-500 to-blue-600 text-black font-bold py-2.5 rounded-xl mt-1 text-xs uppercase tracking-wider flex items-center justify-center gap-2">
+                <i class="fa-brands fa-whatsapp text-base"></i> Direct WhatsApp
             </a>
         </div>
     </header>
 
     <!-- MAIN CONTENT VIEW CONTAINERS -->
-    <main class="pt-28 pb-16 flex-grow">
+    <main class="pt-20 md:pt-28 pb-16 flex-grow">
 
         <!-- VIEW 1: HOME SECTION -->
         <section id="view-home" class="view-section active-view max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -592,13 +592,13 @@
             </div>
 
             <div class="flex flex-wrap items-center justify-center gap-2 mb-10">
-                <button onclick="filterPortfolio('all')" class="filter-btn active-filter px-5 py-2 rounded-full text-xs uppercase tracking-wider font-bold transition-all bg-gradient-to-r from-cyan-400 to-blue-500 text-black">All Works</button>
-                <button onclick="filterPortfolio('poster')" class="filter-btn px-5 py-2 rounded-full text-xs uppercase tracking-wider font-bold transition-all glass-card text-slate-300 hover:text-white border border-purple-500/30">
+                <button onclick="filterPortfolio('all', event)" class="filter-btn active-filter px-5 py-2 rounded-full text-xs uppercase tracking-wider font-bold transition-all bg-gradient-to-r from-cyan-400 to-blue-500 text-black">All Works</button>
+                <button onclick="filterPortfolio('poster', event)" class="filter-btn px-5 py-2 rounded-full text-xs uppercase tracking-wider font-bold transition-all glass-card text-slate-300 hover:text-white border border-purple-500/30">
                     <i class="fa-solid fa-crown text-purple-400 mr-1"></i> Poster Designs (Main)
                 </button>
-                <button onclick="filterPortfolio('automotors')" class="filter-btn px-5 py-2 rounded-full text-xs uppercase tracking-wider font-bold transition-all glass-card text-slate-300 hover:text-white">Automotors</button>
-                <button onclick="filterPortfolio('land')" class="filter-btn px-5 py-2 rounded-full text-xs uppercase tracking-wider font-bold transition-all glass-card text-slate-300 hover:text-white">Land</button>
-                <button onclick="filterPortfolio('skylines')" class="filter-btn px-5 py-2 rounded-full text-xs uppercase tracking-wider font-bold transition-all glass-card text-slate-300 hover:text-white">Skylines</button>
+                <button onclick="filterPortfolio('automotors', event)" class="filter-btn px-5 py-2 rounded-full text-xs uppercase tracking-wider font-bold transition-all glass-card text-slate-300 hover:text-white">Automotors</button>
+                <button onclick="filterPortfolio('land', event)" class="filter-btn px-5 py-2 rounded-full text-xs uppercase tracking-wider font-bold transition-all glass-card text-slate-300 hover:text-white">Land</button>
+                <button onclick="filterPortfolio('skylines', event)" class="filter-btn px-5 py-2 rounded-full text-xs uppercase tracking-wider font-bold transition-all glass-card text-slate-300 hover:text-white">Skylines</button>
             </div>
 
             <div id="portfolio-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -912,7 +912,7 @@
             }
         }
 
-        function filterPortfolio(category) {
+        function filterPortfolio(category, evt) {
             const items = document.querySelectorAll('.portfolio-item');
             const filterBtns = document.querySelectorAll('.filter-btn');
 
@@ -921,8 +921,10 @@
                 btn.classList.add('glass-card', 'text-slate-300');
             });
 
-            event.currentTarget.classList.remove('glass-card', 'text-slate-300');
-            event.currentTarget.classList.add('bg-gradient-to-r', 'from-cyan-400', 'to-blue-500', 'text-black');
+            if (evt && evt.currentTarget) {
+                evt.currentTarget.classList.remove('glass-card', 'text-slate-300');
+                evt.currentTarget.classList.add('bg-gradient-to-r', 'from-cyan-400', 'to-blue-500', 'text-black');
+            }
 
             items.forEach(item => {
                 if (category === 'all' || item.classList.contains(category)) {
