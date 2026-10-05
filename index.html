@@ -367,7 +367,7 @@
             </div>
 
             <!-- Custom Home Page Bottom Contacts Section -->
-            <div class="pt-12 border-t border-white/10">
+            <div id="home-contact" class="pt-12 border-t border-white/10">
                 <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
                     <!-- Left Direct Contact Area -->
                     <div class="lg:col-span-6 space-y-6">
@@ -778,89 +778,7 @@
         </section>
 
         <!-- VIEW 5: CONTACT SECTION -->
-        <section id="view-contact" class="view-section max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="mb-10 text-center max-w-3xl mx-auto">
-                <span class="text-xs font-bold uppercase tracking-widest text-cyan-400">Initiate Contact</span>
-                <h2 class="font-serif text-4xl sm:text-5xl font-bold text-white mt-1">Let's Build Something High Vibe</h2>
-                <p class="text-slate-400 text-sm mt-2">Available for poster commissions, visual brand campaigns & creative direction</p>
-            </div>
-
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
-                <!-- Interactive Contact Form -->
-                <div class="lg:col-span-7 glass-panel p-8 rounded-3xl border border-white/10">
-                    <form onsubmit="handleFormSubmit(event)" class="space-y-5">
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
-                            <div>
-                                <label class="block text-xs uppercase tracking-wider text-slate-400 mb-2 font-semibold">Your Name</label>
-                                <input type="text" required placeholder="John Doe" class="w-full bg-slate-900/80 border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-cyan-400 transition-colors">
-                            </div>
-                            <div>
-                                <label class="block text-xs uppercase tracking-wider text-slate-400 mb-2 font-semibold">Your Email</label>
-                                <input type="email" required placeholder="john@example.com" class="w-full bg-slate-900/80 border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-cyan-400 transition-colors">
-                            </div>
-                        </div>
-
-                        <div>
-                            <label class="block text-xs uppercase tracking-wider text-slate-400 mb-2 font-semibold">Inquiry Type</label>
-                            <select class="w-full bg-slate-900/80 border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-cyan-400 transition-colors">
-                                <option value="poster">Poster Design Main Commission</option>
-                                <option value="automotors">Automotive Photography Shoot</option>
-                                <option value="skyline">Land / Skyline Editorial Shoot</option>
-                                <option value="direction">Full Creative Direction</option>
-                            </select>
-                        </div>
-
-                        <div>
-                            <label class="block text-xs uppercase tracking-wider text-slate-400 mb-2 font-semibold">Message</label>
-                            <textarea rows="4" required placeholder="Describe your vision or project timeline..." class="w-full bg-slate-900/80 border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-cyan-400 transition-colors"></textarea>
-                        </div>
-
-                        <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-cyan-400 to-blue-500 hover:from-cyan-300 hover:to-blue-400 text-slate-950 font-extrabold text-sm uppercase tracking-wider transition-all duration-300 shadow-lg shadow-cyan-500/20">
-                            Send Message <i class="fa-solid fa-paper-plane ml-2"></i>
-                        </button>
-
-                        <div id="form-alert" class="hidden p-4 rounded-xl bg-cyan-500/10 border border-cyan-500/30 text-cyan-300 text-xs text-center font-medium">
-                            Message recorded! You can also ping Hans directly on WhatsApp (+973 3626 6762).
-                        </div>
-                    </form>
-                </div>
-
-                <!-- Direct Social & WhatsApp Quick Cards -->
-                <div class="lg:col-span-5 flex flex-col justify-between gap-4">
-                    <div class="glass-card p-8 rounded-3xl border border-emerald-500/30 bg-gradient-to-br from-emerald-950/20 to-slate-900/80">
-                        <span class="text-xs font-bold uppercase tracking-widest text-emerald-400 block mb-2">Fastest Response</span>
-                        <h3 class="text-2xl font-serif font-bold text-white mb-2">Direct WhatsApp Connection</h3>
-                        <p class="text-slate-300 text-xs leading-relaxed mb-6">Need quick confirmation for a project or photoshoot? Ping me directly on WhatsApp.</p>
-                        
-                        <a href="https://wa.me/97336266762" target="_blank" class="w-full py-3.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-black font-extrabold text-xs uppercase tracking-wider transition-all flex items-center justify-center gap-2 shadow-lg shadow-emerald-500/20">
-                            <i class="fa-brands fa-whatsapp text-lg"></i> +973 3626 6762
-                        </a>
-                    </div>
-
-                    <div class="glass-card p-8 rounded-3xl border border-white/10 space-y-4">
-                        <h4 class="text-sm font-bold uppercase tracking-wider text-slate-300">All Handles Summary</h4>
-                        <ul class="space-y-2 text-xs">
-                            <li class="flex items-center justify-between text-slate-300 py-1 border-b border-white/5">
-                                <span>Main Insta</span>
-                                <a href="https://www.instagram.com/_h_laza_" target="_blank" class="text-cyan-400 hover:underline">@_h_laza_</a>
-                            </li>
-                            <li class="flex items-center justify-between text-slate-300 py-1 border-b border-white/5">
-                                <span>Photography Insta</span>
-                                <a href="https://www.instagram.com/stillsbyhans" target="_blank" class="text-cyan-400 hover:underline">@stillsbyhans</a>
-                            </li>
-                            <li class="flex items-center justify-between text-slate-300 py-1 border-b border-white/5">
-                                <span>Snapchat</span>
-                                <a href="https://www.snapchat.com/add/hanslaza" target="_blank" class="text-yellow-400 hover:underline">hanslaza</a>
-                            </li>
-                            <li class="flex items-center justify-between text-slate-300 py-1">
-                                <span>LinkedIn</span>
-                                <a href="https://www.linkedin.com/in/hanswilson" target="_blank" class="text-blue-400 hover:underline">hanswilson</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <section id="view-contact" class="view-section max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"></section>
 
     </main>
 
@@ -892,6 +810,32 @@
     <script>
         // Interactive Single Page View Switching Logic
         function switchView(viewName) {
+            if (viewName === 'contact') {
+                // Switch view to home and smoothly scroll down to the bottom contact area
+                switchView('home');
+
+                // Keep contact active state in navigation buttons
+                const navButtons = document.querySelectorAll('.nav-btn');
+                navButtons.forEach(btn => {
+                    btn.classList.remove('bg-white/10', 'text-white', 'text-cyan-400', 'font-bold');
+                    btn.classList.add('text-slate-300');
+                });
+
+                const activeBtn = document.getElementById('nav-contact');
+                if (activeBtn) {
+                    activeBtn.classList.add('bg-white/10', 'text-cyan-400', 'font-bold');
+                    activeBtn.classList.remove('text-slate-300');
+                }
+
+                setTimeout(() => {
+                    const contactSection = document.getElementById('home-contact');
+                    if (contactSection) {
+                        contactSection.scrollIntoView({ behavior: 'smooth' });
+                    }
+                }, 50);
+                return;
+            }
+
             // Hide all view sections
             const sections = document.querySelectorAll('.view-section');
             sections.forEach(section => {
@@ -977,14 +921,6 @@
 
         function closeLightbox() {
             document.getElementById('lightbox-modal').classList.add('hidden');
-        }
-
-        // Contact Form Mock Submission Handling
-        function handleFormSubmit(e) {
-            e.preventDefault();
-            const alertBox = document.getElementById('form-alert');
-            alertBox.classList.remove('hidden');
-            e.target.reset();
         }
 
         // Initialize Home Nav Highlight on Page Load
